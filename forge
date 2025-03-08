@@ -1,0 +1,24 @@
+#!/usr/bin/env php
+<?php
+
+/**
+ * Flux Framework CLI Tool
+ */
+
+declare(strict_types=1);
+
+// Define the application root directory
+define('FLUX_ROOT', __DIR__);
+
+// Check if we're running from the Composer autoloader
+if (file_exists(FLUX_ROOT . '/vendor/autoload.php')) {
+    require FLUX_ROOT . '/vendor/autoload.php';
+} else {
+    // Fall back to the system autoloader
+    require_once FLUX_ROOT . '/system/Autoloader.php';
+}
+
+// Create and run the CLI tool
+$forge = new \Flux\CLI\Forge($argv);
+$forge->run();
+

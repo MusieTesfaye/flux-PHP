@@ -1,0 +1,30 @@
+{
+  "name": "flux/framework",
+  "description": "A modern, lightweight PHP framework",
+  "type": "project",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Flux Team",
+      "email": "team@fluxframework.dev"
+    }
+  ],
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require": {
+    "php": "^8.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Flux\\": "system/",
+      "App\\": "app/"
+    }
+  },
+  "bin": ["forge"],
+  "scripts": {
+    "post-create-project-cmd": ["php forge init"],
+    "post-install-cmd": ["chmod +x forge"],
+    "serve": "php forge serve"
+  }
+}
+
