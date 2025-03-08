@@ -1,12 +1,12 @@
 {
-  "name": "flux/framework",
+  "name": "fluxphp/framework",
   "description": "A modern, lightweight PHP framework",
   "type": "project",
   "license": "MIT",
   "authors": [
     {
       "name": "Flux Team",
-      "email": "team@fluxframework.dev"
+      "email": "imblacker13@gmail.com"
     }
   ],
   "minimum-stability": "dev",
